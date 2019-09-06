@@ -1,6 +1,8 @@
 #!/bin/bash
 
-NEW_USER=$(cat /etc/passwd | grep "/home" |cut -d: -f1 |head -1)
+rm -rf /home/liveuser
+
+NEW_USER=$(cat /etc/passwd | grep "/home" |cut -d: -f1 |tail -1)
 DISTRO_NAME=""
 
 do_check_internet_connection(){
