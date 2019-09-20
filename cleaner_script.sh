@@ -1,6 +1,7 @@
 #!/bin/bash
 
-rm -rf /home/liveuser
+#rm -rf /home/liveuser
+userdel -r liveuser
 
 NEW_USER=$(cat /etc/passwd | grep "/home" |cut -d: -f1 |tail -1)
 DISTRO_NAME=""
