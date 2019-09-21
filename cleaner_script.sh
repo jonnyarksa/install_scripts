@@ -107,6 +107,8 @@ systemctl -f enable sddm
 pacman -R gnome-software --noconfirm
 pacman -Rsc gnome-boxes --noconfirm
 
+plymouth-set-default-theme -R arch-charge
+
 }
 
 do_clean_offline_installer(){
