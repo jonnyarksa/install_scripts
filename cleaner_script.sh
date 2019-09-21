@@ -102,7 +102,7 @@ fi
 do_display_manager(){
 # no problem if any of them fails
 systemctl -f enable gdm
-systemctl -f enable lightdm
+systemctl -f enable lightdm-plymouth.service
 systemctl -f enable sddm
 pacman -R gnome-software --noconfirm
 pacman -Rsc gnome-boxes --noconfirm
