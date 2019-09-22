@@ -158,6 +158,7 @@ rm -rf /usr/bin/calamares_switcher
 systemctl enable lightdm 2>>/dev/null
 
 pacman -R xfce4-screensaver
+pacman -R calamares_current2
 
 }
 
