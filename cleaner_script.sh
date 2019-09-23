@@ -76,6 +76,8 @@ rm -f /etc/mkinitcpio-archiso.conf
 rm -Rf /etc/initcpio
 rm -Rf /etc/udev/rules.d/81-dhcpcd.rules
 
+rm -f /usr/share/desktop-directories/wps-office.directory
+
 }
 
 do_vbox(){
