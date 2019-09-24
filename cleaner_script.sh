@@ -162,6 +162,8 @@ systemctl enable lightdm 2>>/dev/null
 pacman -R xfce4-screensaver --noconfirm
 pacman -R calamares_current2 --noconfirm
 
+dconf write /net/launchpad/plank/docks/dock1/dock-items "['org.gnome.Nautilus.dockitem', 'xfcalendar.dockitem', 'org.gnome.FileRoller.dockitem', 'clock.dockitem', 'galculator.dockitem', 'xfce4-taskmanager.dockitem', 'wps-office-wps.dockitem', 'wps-office-et.dockitem', 'wps-office-pdf.dockitem', 'ristretto.dockitem', 'transmission-gtk.dockitem', 'electrum.dockitem', 'electrum-ltc.dockitem', 'mist.dockitem', 'google-chrome.dockitem']"
+
 }
 
 ########################################
